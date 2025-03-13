@@ -47,7 +47,7 @@ npm install
 ## HomePage
 Hospital Management System in mern stack. This system has a ‘Home’ page from where the patient & administrator can login into their accounts by toggling the tabs accordingly...
 
-![homepage](screenshots/image3.png)  
+![homepage](screenshots/image1.png)  
 
 
 
