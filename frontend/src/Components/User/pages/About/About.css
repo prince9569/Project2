@@ -1,0 +1,115 @@
+.about-section {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, #E0EAFC, #CFDEF3);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Image */
+.about-image-content {
+    width: 45%;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+.about-image1 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Text */
+.about-text-content {
+    width: 50%;
+    text-align: left;
+}
+
+.about-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-title > span {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-title span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #6C63FF;
+    border-radius: 8px;
+    left: 0;
+    bottom: -5px;
+}
+
+.about-description {
+    margin-bottom: 40px;
+    color: #555;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+
+.about-text-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Steps */
+.about-text-step {
+    margin-bottom: 20px;
+}
+
+.about-text-sTitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6C63FF;
+}
+
+.about-text-description {
+    margin: 8px 0 0 24px;
+    color: #666;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6rem;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image-content {
+        width: 100%;
+    }
+
+    .about-text-content {
+        width: 100%;
+    }
+}
